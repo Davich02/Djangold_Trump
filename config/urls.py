@@ -20,5 +20,6 @@ from myapp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home-page/',greeting),
-    path('<str:name>/',greeting_name), # add name into url
+    path('<str:name>/',greeting_username),# add name into url
+    path('greeting',greeting_default), #  greeting a teacher
 ]
